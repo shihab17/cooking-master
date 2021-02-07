@@ -1,56 +1,92 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cooking Master</title>
-    
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"/>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cooking Master</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-    <nav class="navbar navbar-expand-lg navbar-light ">
-        <div class="container-fluid">
-            <a id="color-text" class="navbar-brand " href="#"> Cooking master </a> 
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link active" href="#">About</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link active" href="#">Recipes</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link active" href="#">Blog</a>
-              </li>
-              
-            </ul>
-          </div>
-        </div>
-      </nav>
-  
-      <form class="col-md-6 m-auto py-5">
-        <div class="input-group mb-3">
-            <input type="text" id="shearchingMeal" class="form-control" placeholder=" &#xF002;  Search for Meal..." style="font-family:Arial, FontAwesome">
-            <div class="input-group-append">
-                <button type="button" class="btn btn-success search-btn" onclick="searchMeal()">Search</button>
-            </div>
-        </div>
-    </form>
-   <main id="master" class="master-div"> 
-       
-   </main>
-    <script src="script.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+  <nav class="navbar navbar-expand-lg navbar-light ">
+    <div class="container-fluid">
+      <a id="color-text" class="navbar-brand " href="#"> Cooking master </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="#">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="#">Recipes</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="#">Blog</a>
+          </li>
+
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <form class="col-md-6 m-auto py-5">
+    <div class="input-group mb-3">
+      <input type="text" id="shearchingMeal" class="form-control" placeholder=" &#xF002;  Search for Meal..."
+        style="font-family:Arial, FontAwesome">
+      <div class="input-group-append">
+        <button type="button" class="btn btn-success search-btn" onclick="searchMeal()">Search</button>
+      </div>
+    </div>
+  </form>
+  <div id="errorHandale" class="error-handale">
+    <h1 id="error"></h1>
+  </div>
+  <div id="mealDetails" class="meal-details">
+    <img id="mealThumb" src="" alt="">
+    <h1 id="mealName"></h1>
+    <h4 id="ingredients">Ingredients</h4>
+    <ul id="strMeasure1"></ul>
+    <ul id="strMeasure2"></ul>
+    <ul id="strMeasure3"></ul>
+    <ul id="strMeasure4"></ul>
+    <ul id="strMeasure5"></ul>
+    <ul id="strMeasure6"></ul>
+    <ul id="strMeasure7"></ul>
+    <ul id="strMeasure8"></ul>
+    <ul id="strMeasure9"></ul>
+    <ul id="strMeasure10"></ul>
+    <ul id="strMeasure11"></ul>
+    <ul id="strMeasure12"></ul>
+    <ul id="strMeasure13"></ul>
+    <ul id="strMeasure14"></ul>
+    <ul id="strMeasure15"></ul>
+    <ul id="strMeasure16"></ul>
+    <ul id="strMeasure17"></ul>
+    <ul id="strMeasure18"></ul>
+    <ul id="strMeasure19"></ul>
+    <ul id="strMeasure20"></ul>
+  </div>
+  <main id="master" class="master-div">
+
+  </main>
+  <script src="script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+    crossorigin="anonymous"></script>
 </body>
+
 </html>

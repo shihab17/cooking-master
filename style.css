@@ -11,3 +11,45 @@ body{
     color: white;
     padding: 20px;
 }
+.master-div{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+}
+.meal{
+    width: 270px;
+    background-color: white;
+    margin: 10px;
+    border-radius: 15px;
+}
+img{
+    width: 270px;
+    height: 226px;
+    border-radius: 15px;
+}
+.meal h5{
+    padding: 20px;
+   text-align: center;
+}
+.meal-details{
+    display:none;
+    margin: auto;
+    width: 50%;
+    padding: 10px;
+    background-color: white;
+    border-radius: 20px;
+}
+.meal-details img{
+    width: 600px;
+}
+#mealName{
+    padding: 10px;
+}
+#ingredients{
+    padding:10px;
+}
+.error-handale{
+    display: none;
+    color:red;
+    text-align: center;
+    font-size: 40px;
+}
