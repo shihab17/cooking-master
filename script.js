@@ -20,11 +20,11 @@ const meals = (meals) => {
     meals.forEach(meal => {
         const masterDiv = document.getElementById("master");
         const mealDiv = document.createElement("div");
+        mealDiv.className="meal";
         const showMeal = `
-        <div class="meal"> 
         <img onclick="mealDetails(${meal.idMeal})" src="${meal.strMealThumb}" alt="">
         <h5 onclick="mealDetails(${meal.idMeal})">${meal.strMeal}</h5>
-        </div>`
+        `
         mealDiv.innerHTML = showMeal;
         masterDiv.appendChild(mealDiv);
     });
