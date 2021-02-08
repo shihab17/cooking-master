@@ -22,7 +22,7 @@ body{
     border-radius: 15px;
 }
 img{
-    width: 270px;
+    width: 100%;
     height: 226px;
     border-radius: 15px;
 }
@@ -52,4 +52,7 @@ img{
     color:red;
     text-align: center;
     font-size: 40px;
+}
+#mealThumb{
+    width: 100%;
 }
