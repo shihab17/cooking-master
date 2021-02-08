@@ -15,6 +15,8 @@ const handleErrors = (res) => {
     return res;
 }
 const meals = (meals) => {
+    document.getElementById("master").innerHTML='';
+    document.getElementById('mealDetails').style.display = "none";
     meals.forEach(meal => {
         const masterDiv = document.getElementById("master");
         const mealDiv = document.createElement("div");
@@ -63,4 +65,3 @@ const meal = (detailMeal) => {
     document.getElementById('strMeasure19').innerText = detailMeal.strMeasure19;
     document.getElementById('strMeasure20').innerText = detailMeal.strMeasure20;
 }
-
